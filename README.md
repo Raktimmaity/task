@@ -80,8 +80,8 @@ user   → Normal user access
 
 ## 📸 Screenshots
 
-![App Screenshot](login.png)
-![App Screenshot](admin.png)
+![App Screenshot](https://github.com/Raktimmaity/task/blob/main/public/login.png?raw=true)
+![App Screenshot](https://github.com/Raktimmaity/task/blob/main/public/admin.png?raw=true)
 
 
 ---
