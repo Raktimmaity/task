@@ -80,8 +80,8 @@ user   → Normal user access
 
 ## 📸 Screenshots
 
-![App Screenshot](/login.png)
-![App Screenshot](/admin.png)
+![App Screenshot](login.png)
+![App Screenshot](admin.png)
 
 
 ---
