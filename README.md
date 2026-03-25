@@ -1,73 +1,118 @@
-# React + TypeScript + Vite
+# 🧠 Enterprise Task Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A scalable and modern task management dashboard built using **React + TypeScript**, designed with enterprise-level architecture principles such as modular components, type safety, role-based access, and API-driven data handling.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project demonstrates a real-world frontend architecture used in enterprise applications. It includes authentication flow, protected routes, dynamic task management, and data visualization.
 
-## Expanding the ESLint configuration
+The application is built to simulate how modern consulting-driven organizations (like EY) develop scalable frontend systems.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 🔐 Authentication System (Context API)
+- 👥 Role-Based Access (Admin/User)
+- 🔒 Protected Routes
+- 📋 Task Management (Create, Update, Toggle)
+- 🔎 Filtering Tasks (Pending / Completed)
+- 📊 Data Visualization (Charts using Recharts)
+- ⚡ REST API Integration (Axios)
+- 🧩 Modular & Scalable Architecture
+- 📱 Responsive UI
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠 Tech Stack
+
+**Frontend:**
+- React.js
+- TypeScript
+- React Router
+- Axios
+
+**UI & Visualization:**
+- Tailwind CSS (or basic CSS)
+- Recharts
+
+**Architecture Concepts:**
+- Context API (State Management)
+- Component-Based Design
+- Type Safety with Interfaces
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── services/
+ ├── types/
+ ├── context/
+ ├── routes/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation & Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/Raktimmaity/task.git
+cd task
+npm install
+npm run dev
 ```
+
+---
+
+## 🔑 Usage
+
+admin  → Admin access  
+user   → Normal user access  
+
+---
+
+## 📸 Screenshots
+
+![App Screenshot](/login.png)
+![App Screenshot](/admin.png)
+
+
+---
+
+## 🎯 Key Learnings
+
+- Implemented TypeScript for scalable frontend development  
+- Built protected routing and authentication flow  
+- Managed global state using Context API  
+- Designed modular and reusable component architecture  
+- Integrated REST APIs with proper data handling  
+
+---
+
+## 📈 Future Improvements
+
+- JWT Authentication (Backend integration)
+- Role-based dashboards with permissions
+- Advanced analytics and reporting
+- Full backend integration (Node.js + MongoDB)
+
+---
+
+## 👨‍💻 Author
+
+Raktim Maity  
+LinkedIn: https://www.linkedin.com/in/raktim-maity-0a558824a  
+GitHub: https://github.com/Raktimmaity  
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please ⭐ the repository!
